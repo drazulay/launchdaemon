@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+    	<key>Label</key>
+    	<string>com.subliminalindustries.knowledgedb.clean</string>
+    	<key>ProgramArguments</key>
+    	<array>
+        	<string>rm</string>
+        	<string>-fv</string>
+        	<string>/Users/subliminal/Library/Application\ Support/Knowledge/*</string>
+		<string>|</string>
+		<string>tee</string>
+		<string>-a</string>
+		<string>/private/var/log/com.subliminalindustries.knowledgedb.clean.log</string>
+    	</array>
+    	<key>MachServices</key>
+    	<dict>
+        	<key>com.subliminalindustries.knowledgedb.clean</key>
+        	<true/>
+    	</dict>
+    	<key>StartCalendarInterval</key>
+    	<dict>
+        	<key>Hour</key>
+        	<integer>1</integer>
+        </dict>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>UserName</key>
+        <string>root</string>
+    </dict>
+</plist>

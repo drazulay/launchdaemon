@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.subliminalindustries.kernellog</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>log</string>
+        <string>stream</string>
+        <string>--process</string>
+        <string>kernel</string>
+    </array>
+    <key>MachServices</key>
+    <dict>
+        <key>com.subliminalindustries.kernellog</key>
+        <true/>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>UserName</key>
+    <string>root</string>
+    <key>StandardErrorPath</key>
+    <string>/private/var/log/com.subliminalindustries.kernellog.log</string>
+    <key>StandardOutPath</key>
+    <string>/private/var/log/com.subliminalindustries.kernellog.log</string>
+</dict>
+</plist>

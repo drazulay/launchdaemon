@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+    	<key>Label</key>
+    	<string>com.clamav.clamscan</string>
+    	<key>ProgramArguments</key>
+    	<array>
+        	<string>/opt/homebrew/bin/clamscan</string>
+        	<string>-r</string>
+        	<string>-l</string>
+        	<string>/private/var/log/clamav/clamscan.log</string>
+        	<string>--copy</string>
+        	<string>/Volumes/Quarantine/</string>
+        	<string>-i</string>
+        	<string>/</string>
+    	</array>
+    	<key>MachServices</key>
+    	<dict>
+        	<key>com.clamav.clamscan</key>
+        	<true/>
+    	</dict>
+    	<key>StartCalendarInterval</key>
+    	<dict>
+        	<key>Hour</key>
+        	<integer>2</integer>
+        </dict>
+        <key>RunAtLoad</key>
+        <false/>
+        <key>UserName</key>
+        <string>root</string>
+    </dict>
+</plist>

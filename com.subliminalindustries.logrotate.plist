@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+    	<key>Label</key>
+    	<string>com.subliminalindustries.logrotate</string>
+    	<key>ProgramArguments</key>
+    	<array>
+        	<string>/opt/homebrew/opt/logrotate/sbin/logrotate /opt/homebrew/etc/logrotate.conf</string>
+    	</array>
+    	<key>MachServices</key>
+    	<dict>
+        	<key>com.subliminalindustries.logrotate</key>
+        	<true/>
+    	</dict>
+    	<key>StartCalendarInterval</key>
+    	<dict>
+        	<key>Day</key>
+        	<integer>7</integer>
+        </dict>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>UserName</key>
+        <string>root</string>
+    </dict>
+</plist>

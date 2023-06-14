@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.subliminalindustries.logbackup</string>
+        <key>ProgramArguments</key>
+        <array>
+                <string>rsync</string>
+                <string>--chmod subliminal:staff</string>
+                <string>--log-file</string>
+                <string>/Users/subliminal/com.subliminalindustries.logbackup.log</string>
+                <string>-ravu</string>
+                <string>/private/var/log</string>
+                <string>/Volumes/Backup/var/log</string>
+        </array>
+        <key>MachServices</key>
+        <dict>
+                <key>com.subliminalindustries.logbackup</key>
+                <true/>
+        </dict>
+        <key>StartCalendarInterval</key>
+        <dict>
+                <key>Minute</key>
+                <integer>60</integer>
+        </dict>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>UserName</key>
+        <string>root</string>
+    </dict>
+</plist>
