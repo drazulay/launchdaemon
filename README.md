@@ -2,7 +2,7 @@
 
 <div style="overflow: hidden; width: auto; border: 1px solid; border-color: lightgrey; padding: 15px 15px 15px 15px; margin: 0 0px 15px;" align="center">
 
-<img class="width="33%"; margin: 15px 20px;" src=".github/daemon.png">
+<img class="width: 33%; margin: 15px 20px;" src=".github/daemon.png">
 
 <h3>Assorted security related LaunchDaemon <m style="font-family:courier; background-color: #eeeeee; color: #222222;">.plist</m> files for OSX.</h3>
 
